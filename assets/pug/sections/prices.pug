@@ -1,0 +1,14 @@
+section#prices-section
+    h2.title.text-center.bold.uppercase цены на ремонт
+    .wrapper
+        .container-fluid 
+            .row
+                -for(var i = 1; i <= 3;i++)  
+                    .col-sm-6.col-md-6.col-lg-3
+                        .price-item
+                            .picture 
+                                img(data-src="assets/images/price-0" + i + ".jpeg", alt="").lazy
+                                .icon
+                            .title.text-center.bold не включается 
+                            .price.text-center от <span class="bold">250</span> грн
+                            button.btn.price-button.rounded.overlay-form-btn связаться с мастером

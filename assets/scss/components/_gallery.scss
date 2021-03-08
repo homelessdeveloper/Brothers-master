@@ -1,0 +1,13 @@
+section#gallery
+{
+    display: flex;
+
+    .gallery-item 
+    {
+        width: 16.6666666667%;
+        flex: 0 0 25%;
+        padding: 0px 15px;
+        cursor: pointer;
+        outline: none !important;
+    }
+}

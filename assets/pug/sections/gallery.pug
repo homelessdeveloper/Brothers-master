@@ -1,0 +1,9 @@
+.gallery#gallery 
+    .glide__track(data-glide-el="track")
+                ul.glide__slides
+                    -for(var i = 1; i <= 7; i++)
+                        li.glide__slide
+                            .gallery-item
+                                a(href="assets/images/gallery/gallery-" + i +".jpg")
+                                    img(data-src="assets/images/gallery/gallery-" + i +".jpg", alt="worker").lazy
+

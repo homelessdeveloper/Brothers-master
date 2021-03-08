@@ -1,0 +1,121 @@
+// -- ANIMATION 
+
+@keyframes spining 
+{
+    from {transform: rotate(0deg)}
+    to   {transform: rotate(360deg)}
+}
+
+.call-us-container 
+{
+    position: fixed;
+    right:30px;    
+    color: #fff;
+    background: palette(primary);
+    padding: 18px;
+    font-size: 1.8em;
+    border-radius: 100rem;
+    z-index: 990;
+    cursor: pointer;
+    transition: 0.4s all;
+    visibility: hidden;
+    bottom: -100px;
+
+    &::before 
+    {
+        content: "";
+        display: block;
+        position: absolute;
+        top    : -6px;
+        left   : -6px;
+        right  : -6px;
+        bottom : -6px;
+        border : 1px solid transparent;
+        border-color: palette(primary) transparent  palette(primary) transparent;    
+        border-radius: 100%;
+        animation: spining  2.5s infinite linear;
+    }
+
+    &::after 
+    {
+        content: "";
+        display: block;
+        position: absolute;
+        top    : -15px;
+        left   : -15px;
+        right  : -15px;
+        bottom : -15px;
+        border-radius: 100%;
+        border : 1px solid transparent;
+        border-color: transparent palette(primary) transparent   palette(primary) ;    
+        animation: spining  4s infinite linear;
+    }
+
+    &.active 
+    {
+        bottom: 30px;
+        visibility: visible;
+    }
+}
+
+@media screen and (max-width: 1440px)
+{
+    .call-us-container
+    {
+        right: 100px;
+        bottom: -100px;
+
+        &.active 
+        {
+            bottom: 100px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1024px)
+{
+    .call-us-container
+    {
+        right: 60px;
+        bottom: -60px;
+        padding: 15px;
+
+        &.active 
+        {
+            bottom: 60px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 768px)
+{
+    .call-us-container
+    {
+        right: 50px;
+        bottom: -50px;
+        padding: 15px;
+        
+        &.active 
+        {
+            bottom: 50px;
+        }
+    }
+}
+
+@media screen and (max-width: 320px)
+{
+    .call-us-container
+    {
+        right: 30px;
+        bottom: -100px;
+        padding: 15px;
+        font-size: 1em !important;
+        
+        &.active 
+        {
+            bottom: 30px;
+        }
+    }
+}

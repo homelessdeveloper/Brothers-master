@@ -1,0 +1,192 @@
+
+
+@import '~node_modules/bootstrap/scss/bootstrap-grid.scss';
+@import "~node_modules/@glidejs/glide/src/assets/sass/glide.core";
+@import '../css/fontello.css';
+@import 'reset';
+@import 'vars';
+@import 'functions';
+@import 'buttons';
+@import 'typography';
+@import 'components/header';
+@import 'components/banner';
+@import 'components/brands-slider';
+@import 'components/features';
+@import 'components/gallery';
+@import 'components/questions';
+@import 'components/prices';
+@import 'components/testimonials';
+@import 'components/map';
+@import 'components/footer';
+@import 'components/contact-overlay';
+@import 'components/call-us';
+@import 'components/preloader';
+@import 'components/notifications';
+
+i
+{
+    &::before 
+    {
+        margin: 0px !important;
+    }
+}
+
+//FIXME:later
+*{
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0); 
+    -webkit-tap-highlight-color: transparent;  // i.e. Nexus5/Chrome and Kindle Fire HD 7''
+}
+
+img 
+{
+    
+    &.visible 
+    {
+        visibility: visible;
+    }
+}
+body 
+{
+    color: palette(dark);
+    font-family: 'Roboto' , sans-serif;
+    //font-family: 'Roboto-Condested';
+
+}
+
+
+section , .gallery
+{
+    padding: 30px 0px;
+}
+.usable {cursor: pointer;}
+
+.uppercase{text-transform: uppercase !important; }
+.lowercase{text-transform: lowercase !important; }
+
+.italic {font-style: italic;}
+.bold  {font-weight: bold !important;}
+.light {font-weight: lighter !important;}
+
+.text-center{text-align: center;}
+.text-left{text-align: left;}
+.text-right{text-align: left;}
+
+.primary-color {color: palette(primary)}
+.secondary-color {color: palette(secondary)}
+.white-color {color: #fff}
+.dark-color {color: palette(dark)}
+
+a , p , span , blockquote ul , li 
+{
+    color: inherit;
+}
+
+
+//FIXME: THINK ABOUT THIS 
+.flex 
+{
+    display: flex; 
+    flex-wrap: wrap;
+}
+
+img 
+{
+    width: 100%;
+    min-height: 1px;
+    display: inline-block;
+    line-height: 0px;
+}
+
+//FONTS 
+
+
+
+
+
+a 
+{
+    color: inherit;
+    text-decoration: none;
+
+    &:hover 
+    {
+        text-decoration: none;
+    }
+}
+
+.wrapper 
+{
+    min-height: 1px;
+    width: 85%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+
+
+
+
+ul.list 
+{
+    display: flex;
+    padding: 0px;
+
+    li 
+    {
+        list-style-type: none;
+        padding: 5px;
+    }
+
+    &.horizontal 
+    {
+        //display: flex;
+
+        li 
+        {
+            padding: 0px 10px;
+            align-self: center;
+        }
+    }
+}
+
+
+section#testimonials-section , section#prices-section
+{
+    background-color: #f8fbff;
+}
+
+@media screen and (max-width: 450px)
+{
+    .wrapper 
+    {
+        width: 90% !important;
+    }
+}
+
+
+//TODO: add styles to overlay +
+//TODO: add quick call +
+//TODO: Fix a gallery image sizes +-
+//TODO: FIX footer +
+//TODO: add scroll-view loginc +
+//TODO: Mobile adaptivity to sections +
+//TODO: upgrade footer  +
+//TODO: Upgrade fonts 
+//TODO: upgrade mobile nav +
+//TODO: add preloader
+//TODO: flaating contacts from right;
+//TODO: fix header social nav +
+//TODO: fix contacts nav +
+//TODO: Add icons to contact overlay. 
+//TODO: Check browser comp.  
+//TODO: No script version
+//FIXME: Fix call-us-floating logic.
+
+//GOOGLE page speed improvements
+
+//TODO: change all images to JPEG2000, JPEG XR, WebP,
+//TODO: optimize images
+//TODO: lazy loading
+//TODO: configure image sizes
+//TODO: Bundle all files

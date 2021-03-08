@@ -1,0 +1,36 @@
+button.btn
+{
+    background-color: transparent;
+    border: 1px solid #000;
+    cursor: pointer;
+
+    &.rounded 
+    {
+        border-radius: 100rem !important;
+    }
+
+    &.call-us-button
+    {
+        background-color: palette(primary) !important;
+        border: transparent !important;
+        color: #fff !important;
+        padding: 12px 15px !important;
+        
+    }
+
+
+    &.price-button 
+    {
+        background: palette(primary);
+        color: #fff;
+        border-color: palette(primary);
+    }
+
+
+    &:focus 
+    {
+        outline: none;
+    }
+
+
+}

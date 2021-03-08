@@ -1,0 +1,31 @@
+.notification 
+{
+    position: fixed;
+    padding: 15px 15px;
+    color: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 100rem;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    z-index: 991;
+    transition: 0.25s ease-in-out;
+    top: -100px; 
+    text-align: center;
+    font-weight: bold;
+
+    &.active    
+    {
+        top: 15px;
+    }
+
+    &.success 
+    {
+        background-color: palette(secondary-ascend);
+    }
+
+    &.danger 
+    {
+        background-color: palette(primary);
+    }
+
+}

@@ -1,0 +1,151 @@
+.hero-banner 
+{
+    
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 15px 0px;
+    hr 
+    {
+        width: 25%;
+        height: 2px;
+        border: transparent;
+        background-color: palette(primary);
+        display: inline-block;
+        
+        
+    }
+
+    h1 
+    {
+        font-size: 2.5em;
+    }
+
+    ul.tips-list 
+    {
+        background-color: #fff;
+        border-radius: 15px;
+        li
+        {
+            padding: 20px 5px;
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+            position: relative;
+
+            &::before 
+            {
+                content: '\e80d';
+                position: absolute;
+                font-family: "fontello";
+                font-style: normal;
+                font-weight: normal;
+                display: inline-block;
+                text-decoration: inherit;
+                width: 1em;
+                margin-right: .2em;
+                text-align: center;
+                font-variant: normal;
+                text-transform: none;
+                line-height: 1em;
+                margin-left: .2em;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                line-height: 1.6em;
+                font-size: 1.6em;
+                height: 45px;
+                width: 45px;
+                color: palette(primary);
+                background-color: #fff;
+                border-radius: 100%;
+                margin-left: -25px;
+                margin-right: 15px;
+                //FIXME: Change RGBA
+                box-shadow: 0 0 15px rgba(0,0,0,0.3);
+            }
+            span 
+            {
+                display: inline-block;
+                margin-left: 30px;
+            }
+        }
+    }
+
+    button.banner-button
+    {
+        padding: 14px 20px !important;        
+        margin: 15px 0px;
+        position: relative;
+
+        i
+        {
+            margin-right: 8px;
+        }
+    }
+
+
+    .contact-text
+    {
+        display: inline-block;
+        font-size: 1.15em;
+        margin: 0px 15px;
+    }
+
+    .banner-image 
+    {
+        padding: 15px;
+    }
+
+}
+
+@media screen and(max-width: 554px)
+{
+    .hero-banner 
+    {
+        button.banner-button
+        {
+            display: block !important;
+            margin: 15px  auto !important;
+
+        }
+        .contact-text 
+        {
+            display: block !important;
+            text-align: center;
+        }
+    }
+}
+
+@media screen and(max-width: 425px)
+{
+    .hero-banner
+    {
+        background-size: cover;
+        background-position: center center;
+        h1 
+        {
+            text-align: center !important;
+            margin: 15px 0px;
+            font-size: 1.9em;
+        }
+
+        hr 
+        {
+            display: block;
+            margin: 15px auto;
+        }
+
+        ul.tips-list 
+        {
+            
+        }
+        button 
+        {
+            display: block;
+            margin: 15px auto !important;
+            text-align: center;
+        }
+    }
+}

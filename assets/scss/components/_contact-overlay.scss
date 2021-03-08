@@ -1,0 +1,127 @@
+.contact-overlay
+{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    visibility: hidden;
+
+    &::before 
+    {
+        content: "";
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        background: rgba(0,0,0,0.8);
+        width: 100%;
+        height: 100%;
+        z-index: 990;
+        opacity: 0;
+        transition: 0.5s all;
+    }
+    .contacts-form 
+    {
+        position: fixed;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+        background-color: palette(secondary-ascend);
+        border-radius: 1.25rem;
+        padding: 30px 50px;
+        text-align: center;
+        z-index: 991;
+        transition: 0.5s all;
+        opacity: 0;
+        border: 10px solid #fff;
+
+        .title 
+        {
+            margin-bottom: 15px;
+            color: #FFF;
+        }
+
+        ul 
+        {
+
+            margin: 10px 0px;
+            li 
+            {
+                padding: 8px 0px;
+                font-size: 1.35em;
+
+                i 
+                {
+                    font-size: 0.9em;
+                    margin-right: 5px;
+                }
+                a
+                {
+
+                }
+            }
+        }
+
+        button
+        {
+            width: 100%;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+            padding: 13px 10px !important;
+        }
+
+        #exit-cross 
+        {
+            position: absolute;
+            right   : -10px;
+            top     : -10px;
+            background-color: #fff;
+            padding: 8px;
+            border-radius: 100%;
+            font-size: 1.5em;
+            cursor: pointer;
+            transition: 0.2s ease-in-out;
+            i
+            {
+                margin: 0px;
+                
+            }
+            &:hover 
+            {
+                color: palette(primary);
+            }
+        }
+    }
+
+    &.active 
+    {
+        visibility: visible;
+
+        &::before
+        {
+            content: "";
+            opacity: 1;
+        }
+
+        .contacts-form
+        {
+            top: 50%;
+            opacity: 1;
+        }
+    }
+}
+
+
+@media screen and (max-width: 425px)
+{
+    .contact-overlay
+    {
+        .contacts-form 
+        {
+            width: 75%;
+            padding: 15px;
+        }
+    }
+}

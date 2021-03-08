@@ -1,0 +1,109 @@
+#questions-section
+{
+    width: 100%;
+    min-height: 180px;
+    //background-image: url("assets/images/questions-background.jpg");
+    background-size: cover;
+    padding: 50px 0px;
+
+    .title 
+    {
+        padding: 15px 0px;
+    }
+    
+    .separator 
+    {
+        background-color: palette(primary);
+        display: block;
+        width: 25%;
+        height: 2px;
+        margin: 15px 0px;
+    }
+    .questions-container 
+    {
+        padding: 15px 0px;
+
+        .question-container 
+        {
+            .question 
+            {
+                display: block;
+                width: 100%;
+                padding: 13px 15px;
+                text-align-last: left;
+                border: 1px solid transparent;
+                background-color: #fff;
+                border-bottom: 1px solid #e2e2e2;
+                line-height: 23px;
+                transition: 0.25s all;
+            }
+
+            .question-answer 
+            {
+                background: transparent;
+                max-height: 0px;
+                overflow: hidden;
+                transition: 0.6s all;
+                color: #fff;
+                line-height: 20px;
+
+                p
+                {
+                    padding: 15px;
+                }
+            }
+
+
+            &.active 
+            {
+                .question 
+                {
+                    background-color: palette(secondary-ascend);
+                    color: #fff;
+                    border-color: palette(secondary-ascend);
+                }
+                .question-answer
+                {
+                    max-height: 400px;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 768px)
+{
+    #questions-section
+    {
+        position: relative;
+
+        &::before 
+        {
+            content: "";
+            top: 0px;
+            left: 0px;
+            bottom: 0px;
+            right: 0px;
+            background-color: palette(secondary-descend);
+            position: absolute;
+            z-index: 1;
+            opacity: 0.75;
+        }
+        h3
+        {
+            text-align: center;
+        }
+
+        .separator
+        {
+            margin: auto;
+        }
+
+        .content 
+        {
+            position: relative;
+            z-index: 10;
+        }
+    }
+}

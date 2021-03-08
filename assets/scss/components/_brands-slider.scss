@@ -1,0 +1,20 @@
+.brands-slider-section 
+{
+    background: palette(secondary);
+    padding: 0px !important;
+
+    #brands-slider
+    {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+
+        .brand 
+        {
+            flex: 0 0 auto;
+            padding: 10px 15px;
+            outline: none !important;
+        }
+    }
+}

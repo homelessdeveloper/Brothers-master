@@ -1,0 +1,16 @@
+
+.icon-phone-call:before { content: '\e800'; } /* '' */
+.icon-phone-call-border:before { content: '\e801'; } /* '' */
+.icon-power-button:before { content: '\e802'; } /* '' */
+.icon-quotes:before { content: '\e803'; } /* '' */
+.icon-thermometer:before { content: '\e804'; } /* '' */
+.icon-twitter:before { content: '\e805'; } /* '' */
+.icon-cross-rounded:before { content: '\e806'; } /* '' */
+.icon-drop:before { content: '\e807'; } /* '' */
+.icon-envelope:before { content: '\e808'; } /* '' */
+.icon-facebook:before { content: '\e809'; } /* '' */
+.icon-map-marker:before { content: '\e80a'; } /* '' */
+.icon-map-marker-border:before { content: '\e80b'; } /* '' */
+.icon-phone:before { content: '\e80c'; } /* '' */
+.icon-back-arrow:before { content: '\e80d'; } /* '' */
+.icon-cross:before { content: '\e80e'; } /* '' */
